@@ -1,63 +1,63 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:burlywood;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  box-sizing: border-box;
+}
 
-  .container{
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    background:#8b6b5c;
-    text-align: center;
+.container {
 
-  }
-  
-  .header{
-    padding: 60px;
-    text-align: center;
-    background:brown;
-    color: white;
-    font-size: 30px;
-  }
+  background: #8b6b5c;
+  text-align: center;
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #8b6b5c;
-    width: 100%;
-    display: flex; 
-    justify-content: space-between;
+}
 
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #57433a;
-  }
+.header {
+  padding: 60px;
+  text-align: center;
+  background: brown;
+  color: white;
+  font-size: 30px;
+}
 
-  .active {
-    background-color: #3d241d;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8b6b5c;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #57433a;
+}
+
+.active {
+  background-color: #3d241d;
+}
 
 
 
@@ -65,10 +65,11 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #3d241d;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
 
 }
 
@@ -85,9 +86,14 @@ h2 {
   color: white;
 }
 
+p {
+  color: white;
+}
+
 label {
   display: block;
   margin-top: 10px;
+  color: white;
 }
 
 input {
@@ -138,44 +144,44 @@ a:hover {
 
 
 
-  /* Style the side navigation */
-  .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-  }
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
 
-  /*make the active user text inherit style from container*/
+/*make the active user text inherit style from container*/
 
-  .inbox__people{
-      color: white;
-      padding: 16px;
-  }
-  
-  
-  /* Side navigation links */
-  .sidenav a {
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-  }
+.inbox__people {
+  color: white;
+  padding: 16px;
+}
 
 
-  
-  /* Change color on hover */
-  .sidenav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the content */
-  .content {
-    margin-left: 200px;
-    padding-left: 20px;
-  }
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}

@@ -1,3 +1,5 @@
+console.log("ARE YOU WORKING")
+
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('login-form');
     const signupForm = document.getElementById('signup-form');
@@ -8,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     loginLink.addEventListener('click', function(event) {
         event.preventDefault();
+        console.log('Login link clicked');
         loginForm.style.display = 'block';
         signupForm.style.display = 'none';
     });
