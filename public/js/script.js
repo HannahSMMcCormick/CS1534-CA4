@@ -1,4 +1,4 @@
-console.log("ARE YOU WORKING")
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('login-form');
@@ -20,5 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         loginForm.style.display = 'none';
         signupForm.style.display = 'block';
 
+    
     });
 });
