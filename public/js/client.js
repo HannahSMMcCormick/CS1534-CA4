@@ -1,45 +1,46 @@
 //required for front end communication between client and server
-
-const socket = io();
+//Do i add url here
+const socket = io('http://localhost:5000/');
 
 const inboxPeople = document.querySelector(".inbox__people");
 
 
 let userName = "";
 let id;
+
 const newUserConnected = function (data) {
-    
 
-    //give the user a random unique id
-    id = Math.floor(Math.random() * 1000000);
-    userName = 'user-' +id;
-    //console.log(typeof(userName));   
-    
 
-    //emit an event with the user id
-    socket.emit("new user", userName);
-    //call
-    addToUsersBox(userName);
+  //give the user a random unique id
+  id = Math.floor(Math.random() * 1000000);
+  userName = 'user-' + id;
+  //console.log(typeof(userName));   
+
+
+  //emit an event with the user id
+  socket.emit("new user", userName);
+  //call
+  addToUsersBox(userName);
 };
 
 const addToUsersBox = function (userName) {
-    //This if statement checks whether an element of the user-userlist
-    //exists and then inverts the result of the expression in the condition
-    //to true, while also casting from an object to boolean
-    if (!!document.querySelector(`.${userName}-userlist`)) {
-        return;
-    
-    }
-    
-    //setup the divs for displaying the connected users
-    //id is set to a string including the username
-    const userBox = `
+  //This if statement checks whether an element of the user-userlist
+  //exists and then inverts the result of the expression in the condition
+  //to true, while also casting from an object to boolean
+  if (!!document.querySelector(`.${userName}-userlist`)) {
+    return;
+
+  }
+
+  //setup the divs for displaying the connected users
+  //id is set to a string including the username
+  const userBox = `
     <div class="chat_id ${userName}-userlist">
       <h5>${userName}</h5>
     </div>
   `;
-    //set the inboxPeople div with the value of userbox
-    inboxPeople.innerHTML += userBox;
+  //set the inboxPeople div with the value of userbox
+  inboxPeople.innerHTML += userBox;
 };
 
 //call 
@@ -48,8 +49,8 @@ newUserConnected();
 //when a new user event is detected
 socket.on("new user", function (data) {
   data.map(function (user) {
-          return addToUsersBox(user);
-      });
+    return addToUsersBox(user);
+  });
 });
 
 //when a user leaves
@@ -66,10 +67,24 @@ const addNewMessage = ({ user, message }) => {
   const time = new Date();
   const formattedTime = time.toLocaleString("en-US", { hour: "numeric", minute: "numeric" });
 
+  const messageHTML = `
+  <div class="message ${user === userName ? 'sender' : 'receiver'}">
+    <div class="message__content">${message}</div>
+    <div class="message__info">
+      <span class="message__author">${user}</span>
+      <span class="time_date">${formattedTime}</span>
+    </div>
+  </div>
+`;
+
+  messageBox.innerHTML += messageHTML;
+
+  messageBox.scrollTop = messageBox.scrollHeight;
+
   const receivedMsg = `
   <div class="incoming__message">
     <div class="received__message">
-      <p>${message}</p>
+    <p>${message}</p>
       <div class="message__info">
         <span class="message__author">${user}</span>
         <span class="time_date">${formattedTime}</span>
@@ -87,8 +102,6 @@ const addNewMessage = ({ user, message }) => {
     </div>
   </div>`;
 
-  //is the message sent or received
-  messageBox.innerHTML += user === userName ? myMsg : receivedMsg;
 };
 
 messageForm.addEventListener("submit", (e) => {
