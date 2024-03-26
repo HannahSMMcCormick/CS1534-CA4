@@ -121,3 +121,9 @@ messageForm.addEventListener("submit", (e) => {
 socket.on("chat message", function (data) {
   addNewMessage({ user: data.nick, message: data.message });
 });
+
+var messageContainer = document.querySelector('.message-container');
+var messageDiv = document.createElement('div');
+messageDiv.classList.add('message');
+messageDiv.textContent = message; // Assign the dynamically generated message here
+messageContainer.appendChild(messageDiv);

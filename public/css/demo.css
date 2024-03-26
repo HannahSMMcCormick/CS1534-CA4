@@ -19,6 +19,7 @@ body {
   color: white;
   margin: 20px;
   padding: 20px;
+  left: 200px;
 
 }
 
@@ -104,8 +105,11 @@ li a:hover {
 
 /* Style the content */
 .content {
-  margin-left: 200px;
-  padding-left: 20px;
+  margin-left: 220px; /* Adjust according to your sidebar width */
+  margin-top: 20px; /* Add margin from the top */
+  flex: 1; /* Allow content to fill remaining space */
+  display: flex; /* Ensure flex layout */
+  flex-direction: column; 
 }
 
 .containerBottom {
@@ -119,5 +123,88 @@ li a:hover {
   right: 0;
   bottom: 0;
   z-index: 2;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
 }
+
+.message_form__input{
+
+  flex: 1;
+  margin-right: 10px;
+  padding:10px;
+  font-size: 16px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.message_form__button{
+
+  padding: 10px 20px;
+  font-size: 16px;
+  border:none;
+  background-color: #78594a;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.message_form__button:hover{
+
+  background-color: #3d241d;
+
+}
+
+.message {
+  word-wrap: break-word; 
+}
+.message-container {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  padding: 10px;
+}
+
+  .receiver {
+    background-color: #afe1af;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%; 
+    float: right;
+    clear: both; 
+    margin-right: 20px;
+    text-align: right;
+
+  }
+  .sender {
+    background-color: #097969;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%;
+    float:left;
+    clear: both; 
+    text-align: left;
+  }
+
+  .containerText {
+
+    background: #8b6b5c;
+    text-align: center;
+    color: white;
+    margin-left: 200px;
+    padding:20px;
+    margin:20px 20px 20px 220px;
+    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    height: 450px;
+    overflow: scroll;
+  }
+  
