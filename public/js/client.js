@@ -1,5 +1,4 @@
 //required for front end communication between client and server
-//Do i add url here
 const socket = io('http://localhost:5000/');
 
 const inboxPeople = document.querySelector(".inbox__people");
@@ -46,6 +45,7 @@ const addToUsersBox = function (userName) {
 //call 
 newUserConnected();
 
+//message Join?
 //when a new user event is detected
 socket.on("new user", function (data) {
   data.map(function (user) {
@@ -53,6 +53,7 @@ socket.on("new user", function (data) {
   });
 });
 
+//Leave message?
 //when a user leaves
 socket.on("user disconnected", function (userName) {
   document.querySelector(`.${userName}-userlist`).remove();
@@ -125,5 +126,5 @@ socket.on("chat message", function (data) {
 var messageContainer = document.querySelector('.message-container');
 var messageDiv = document.createElement('div');
 messageDiv.classList.add('message');
-messageDiv.textContent = message; // Assign the dynamically generated message here
+messageDiv.textContent = message; 
 messageContainer.appendChild(messageDiv);
