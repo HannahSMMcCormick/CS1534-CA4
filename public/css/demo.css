@@ -447,3 +447,88 @@ li a:hover {
   .active, .dot:hover {
     background-color: #717171;
   }
+
+  .Island{
+  position: absolute;
+  left:320px;
+
+
+
+  }
+
+  .Bottle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left:450px;
+    top:200px;
+
+  }
+
+  .Bottle2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left:550px;
+    top:200px;
+
+  }
+
+
+  .Bottle3{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left:650px;
+    top:200px;
+
+  }
+
+  
+  .info-square1{
+    position: absolute;
+    background-color: tan;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+    z-index: 4;
+    left:20px;
+    top:20px;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+  
+.info-square2{
+  position: absolute;
+  background-color: tan;
+  border: 1px solid black;
+  padding: 10px;
+  display: none;
+  z-index: 4;
+  left:525px;
+  top:20px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.info-square3{
+  position: absolute;
+  background-color: tan;
+  border: 1px solid black;
+  padding: 10px;
+  display: none;
+  z-index: 4;
+  right:20px;
+  top:20px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+p{
+
+  font-size: 16px;
+}
