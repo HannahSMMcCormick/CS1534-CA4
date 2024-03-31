@@ -1,0 +1,1006 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-color: #7EC8E3;
+  background-image: url(../sea2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1{
+
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+.Buoy{
+
+      position: absolute;
+      left:5%;
+      top: 40%;
+      z-index: 3;
+}
+
+.wave{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  z-index: 4;
+  width:100%;
+  height:25%;
+
+}
+
+
+.Buoy2{
+
+  position: absolute;
+  right: 5%;
+  bottom:  20%;
+  z-index: 1;
+}
+
+.wave2{
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: 2;
+width:100%;
+height:50%;
+
+}
+
+.Fish{
+
+  position: absolute;
+  left: 2%;
+  top: 65%;
+  z-index: 3;
+  height:200px;
+
+
+}
+.speech-container {
+  position: relative;
+  left: 20%;
+  top: 20%;
+  z-index: 3;
+  width: 20%;
+  height: auto;
+  border: 1px solid red; 
+}
+
+
+.Speach {
+  width: 100%; 
+  height: 100%;
+
+}
+
+.FishText {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  margin: 0; 
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; 
+  z-index: 1; 
+}
+.Seagull{
+
+  position: absolute;
+  left: 1000px;
+  top: 20px;
+  z-index: 5;
+  height:200px;
+
+}
+
+.Speach2{
+
+  position: absolute;
+  left: 900px;
+  top: 10px;
+  z-index: 1;
+  height:150px;
+
+}
+
+.SeagullText{
+
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 950px;
+  top: 30px;
+  z-index: 2;
+  max-height:50px;
+  max-width: 50px;
+
+
+
+}
+
+.container {
+
+  background: #58A399;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+
+}
+
+
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: brown;
+  color: white;
+  font-size: 30px;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7EC8E3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+li {
+  place-items: 20px;
+  z-index: 3;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  z-index: 3;
+}
+
+.nav ul li:last-child {
+  margin-left: auto;
+}
+
+li a:hover {
+  background-color: #E2F4C5;
+}
+
+.active {
+  background-color: #A8CD9F;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #58A399;
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+
+/*make the active user text inherit style from container*/
+
+.inbox__people{
+    color: white;
+    padding: 16px;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  margin:10px;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.content {
+  margin-left: 220px; 
+  margin-top: 20px; 
+  flex: 1;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.containerBottom {
+
+  background-image: url(../waves.webp);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.message_form__input{
+
+  flex: 1;
+  margin-right: 10px;
+  padding:10px;
+  font-size: 16px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.message_form__button{
+
+  padding: 10px 20px;
+  font-size: 16px;
+  border:none;
+  background-color: #78594a;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.message_form__button:hover{
+
+  background-color: #3d241d;
+
+}
+
+.message {
+  word-wrap: break-word; 
+}
+.message-container {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  padding: 10px;
+}
+
+  .receiver {
+    background-color: #afe1af;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%; 
+    float: right;
+    clear: both; 
+    margin-right: 20px;
+    text-align: right;
+
+  }
+  .sender {
+    background-color: #097969;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%;
+    float:left;
+    clear: both; 
+    text-align: left;
+  }
+  
+  .joined {
+    background-color: #68BBE3;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%; 
+    float: right;
+    clear: both; 
+    margin-right: 20px;
+    text-align: right;
+
+  }
+
+  .left {
+    background-color: #0E86D4;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%; 
+    float: right;
+    clear: both; 
+    margin-right: 20px;
+    text-align: right;
+
+  }
+
+  .containerText {
+
+    background: #FFF3CF;
+    text-align: center;
+    color: white;
+    padding:20px;
+    margin:20px 20px 20px 220px;
+    flex: 1;
+    display: flex; 
+    flex-direction: column; 
+    height: 450px;
+    overflow: scroll;
+  }
+  .slideshow-container {
+    margin: auto;
+    max-width: 100%;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+
+  }
+
+  .Slides {
+    display: none;
+    max-width: 100%;
+    max-height: 100%; 
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 60px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .Island{
+  position: absolute;
+  left:20%;
+
+
+
+  }
+
+  .Bottle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left:25%;
+    top:25%;
+
+  }
+
+  .Bottle2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left:35%;
+    top:25%;
+
+  }
+
+
+  .Bottle3{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left:40%;
+    top:25%;
+
+  }
+
+  
+  .info-square1{
+    position: absolute;
+    background-color: tan;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+    z-index: 4;
+    left:20px;
+    top:20px;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+  
+.info-square2{
+  position: absolute;
+  background-color: tan;
+  border: 1px solid black;
+  padding: 10px;
+  display: none;
+  z-index: 4;
+  left:525px;
+  top:20px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.info-square3{
+  position: absolute;
+  background-color: tan;
+  border: 1px solid black;
+  padding: 10px;
+  display: none;
+  z-index: 4;
+  right:20px;
+  top:20px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+p{
+
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 450px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-color: #7EC8E3;
+    background-image: url(../sea2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    overflow: hidden;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .Buoy {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    z-index: 3;
+  }
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100vh;
+    height: 25vh;
+  }
+
+  .Buoy2 {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    z-index: 1;
+  }
+
+  .wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vh;
+    height: 50%;
+  }
+
+  .Fish {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    height: 150px;
+  }
+
+  .speech-container {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    z-index: 3;
+    width: 80%;
+    height: auto;
+    border: 1px solid red;
+  }
+
+  .Speach {
+    width: 100%;
+    height: 100%;
+  }
+
+  .FishText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .Seagull {
+    position: absolute;
+    left: 1000px;
+    top: 20px;
+    z-index: 5;
+    height: 200px;
+  }
+
+  .Speach2 {
+    position: absolute;
+    left: 900px;
+    top: 10px;
+    z-index: 1;
+    height: 150px;
+  }
+
+  .SeagullText {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 950px;
+    top: 30px;
+    z-index: 2;
+    max-height: 50px;
+    max-width: 50px;
+  }
+
+  .container {
+    background: #58A399;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: brown;
+    color: white;
+    font-size: 30px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7EC8E3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  li {
+    place-items: 20px;
+    z-index: 3;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 3;
+  }
+
+  .nav ul li:last-child {
+    margin-left: auto;
+  }
+
+  li a:hover {
+    background-color: #E2F4C5;
+  }
+
+  .active {
+    background-color: #A8CD9F;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #58A399;
+    overflow-x: hidden;
+    padding-top: 40px;
+  }
+
+  .inbox__people {
+    color: white;
+    padding: 16px;
+  }
+
+  .sidenav a {
+    margin: 10px;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .content {
+    margin-left: 220px;
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerBottom {
+    background-image: url(../waves.webp);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .message_form__input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .message_form__button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #78594a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .message_form__button:hover {
+    background-color: #3d241d;
+  }
+
+  .message {
+    word-wrap: break-word;
+  }
+
+  .message-container {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  .receiver {
+    background-color: #afe1af;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%;
+    float: right;
+    clear: both;
+    margin-right: 20px;
+    text-align: right;
+  }
+
+  .sender {
+    background-color: #097969;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%;
+    float: left;
+    clear: both;
+    text-align: left;
+  }
+
+  .joined {
+    background-color: #68BBE3;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%;
+    float: right;
+    clear: both;
+    margin-right: 20px;
+    text-align: right;
+  }
+
+  .left {
+    background-color: #0E86D4;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%;
+    float: right;
+    clear: both;
+    margin-right: 20px;
+    text-align: right;
+  }
+
+  .containerText {
+    background: #FFF3CF;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 20px 20px 20px 220px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    overflow: scroll;
+  }
+
+  .slideshow-container {
+    margin: auto;
+    max-width: 100%;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .Slides {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 60px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  .Island {
+    position: absolute;
+    left: 50%;
+ 
+  }
+
+  .Bottle {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left: 450px;
+    top: 200px;
+  }
+
+  .Bottle2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left: 550px;
+    top: 200px;
+  }
+
+  .Bottle3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+    left: 650px;
+    top: 200px;
+  }
+
+  .info-square1 {
+    position: absolute;
+    background-color: tan;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+    z-index: 4;
+    left: 20px;
+    top: 20px;
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .info-square2 {
+    position: absolute;
+    background-color: tan;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+    z-index: 4;
+    left: 525px;
+    top: 20px;
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .info-square3 {
+    position: absolute;
+    background-color: tan;
+    border: 1px solid black;
+    padding: 10px;
+    display: none;
+    z-index: 4;
+    right: 20px;
+    top: 20px;
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
