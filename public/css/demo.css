@@ -24,64 +24,90 @@ h1{
 
 }
 
-
-.Buoy{
-
-      position: absolute;
-      left: 150px;
-      top: 100px;
-      z-index: 3;
+.SeaContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80vh; 
+  border-style: solid;
+  overflow: hidden;
 }
+
+
+  .Buoy {
+    position: absolute;
+    bottom: 5%;
+    left: 40%; 
+    transform: translateX(-50%);
+    z-index: 3;
+  }
 
 .wave{
   position: absolute;
-  top: 400px;
+  bottom: 0;
+  height: 40%;
+  width: 100%; 
   z-index: 4;
-  max-width:100%;
-  max-height:50%;
-
 }
 
-
-.Buoy2{
-
+.Buoy2 {
   position: absolute;
-  left: 650px;
-  top: 20px;
+  left:80%;
+  bottom: 30%; 
+  transform: translateX(-50%);
   z-index: 1;
 }
 
 .wave2{
 position: absolute;
-top: 300px;
+bottom:0;
+height:70%;
 z-index: 2;
 max-width:100%;
-max-height:50%;
 
+}
+
+.Fish-container {
+  position: absolute;
+  height:30%;
+  width:30%;
+  border-style: solid;
+  left: 15%; 
+  bottom:60%;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
 .Fish{
-
   position: absolute;
-  left: 50px;
-  top: 325px;
-  z-index: 3;
+  left: 10%;
   height:200px;
+}
+.Speach-container{
+  position: absolute;
+  height:30%;
+  width:30%;
+  border-style: solid;
+  left: 15%; 
+  bottom:60%;
+  transform: translateX(-50%);
+  z-index: 3;
 
 
 }
-
 .FishText{
 
   color:black;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   position: absolute;
-  left: 200px;
-  top: 150px;
+  left: 100%;
+  top: 15%;
   z-index: 3;
-  max-height:50px;
-  max-width: 50px;
+  max-height:20%;
+  max-width: 20%;
+  text-align: center;
+  
 
 
 }
@@ -90,11 +116,11 @@ max-height:50%;
 .Speach{
 
   position: absolute;
-  left: 150px;
-  top: 100px;
+  left: 80%;
+  top: 0%;
   z-index: 3;
-  height:300px;
-  width: 200px;
+  height:100%;
+  width:50% ;
 }
 
 .Seagull{
