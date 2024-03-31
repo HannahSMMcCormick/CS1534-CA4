@@ -8,7 +8,6 @@ const server = app.listen(PORT, function () {
   console.log(`Listening on port ${PORT}`);
 
 });
-
 // Static files
 app.use(express.static("public"));
 
@@ -38,8 +37,6 @@ io.on("connection", function (socket) {
       if (data.message.match(/<[^>]+>/g)){
         return;
       }
-
-
       io.emit("chat message", data);
   });
 

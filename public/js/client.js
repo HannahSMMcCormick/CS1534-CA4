@@ -12,8 +12,6 @@ let userName = "";
 let id;
 
 const newUserConnected = function (data) {
-
-
   //give the user a random unique id
   id = Math.floor(Math.random() * 1000000);
   userName = 'user-' + id;
@@ -62,7 +60,7 @@ socket.on("user joined", function(data){
   const time = new Date();
   const formattedTime = time.toLocaleString("en-US", { hour: "numeric", minute: "numeric" });
   const messageHTML = `
-  <div class="message receiver">
+  <div class="message receiver joined">
     <div class="message__content">${data} has joined</div>
     <div class="message__info">
       <span class="time_date">${formattedTime}</span>
@@ -80,6 +78,21 @@ socket.on("user joined", function(data){
 socket.on("user disconnected", function (userName) {
   document.querySelector(`.${userName}-userlist`).remove();
   //add user leave message here
+  const time = new Date();
+  const formattedTime = time.toLocaleString("en-US", { hour: "numeric", minute: "numeric" });
+  const messageHTML = `
+  <div class="message receiver left">
+    <div class="message__content">${userName} has left</div>
+    <div class="message__info">
+      <span class="time_date">${formattedTime}</span>
+    </div>
+  </div>
+`;
+
+  messageBox.innerHTML += messageHTML;
+
+  messageBox.scrollTop = messageBox.scrollHeight;
+
 });
 
 
