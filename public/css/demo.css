@@ -189,20 +189,18 @@ max-width:100%;
 
 }
 
-
-
-
-
-
-.containerBanner {
-
-  background-image: url(../wood.jpg);
-  text-align: center;
-  color: white;
-  padding: 20px;
-  margin-top: 20px;
-
+.AboutPage {
+  padding: 5%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 60vh; 
+  border: 1px solid black;
+  overflow: hidden;
 }
+
+
 
 .container {
 
@@ -430,116 +428,47 @@ li a:hover {
     height: 450px;
     overflow: scroll;
   }
-  .slideshow-container {
-    margin: auto;
-    max-width: 100%;
-    max-height: 400px;
-    position: relative;
+
+  .Island {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 90%;
+    border-style: solid;
     overflow: hidden;
-    z-index: 3;
-
-  }
-
-  .Slides {
-    display: none;
-    max-width: 100%;
-    max-height: 100%; 
-  }
-
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
-  .text {
-    color: #f2f2f2;
-    font-size: 60px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    padding: 100px 0;
-  }
-
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-
-  .Island{
-  position: absolute;
-  left:320px;
-
-
-
   }
 
   .Bottle{
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 25%;
+    width: 10%;
+    bottom:30%;
     z-index: 2;
-    left:450px;
-    top:200px;
-
-  }
+    left:35%;
+    
+    }
 
   .Bottle2{
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 25%;
+    width: 10%;
+    bottom:30%;
     z-index: 2;
-    left:550px;
-    top:200px;
+    left:45%;
+    
 
   }
 
 
   .Bottle3{
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 25%;
+    width: 10%;
+    bottom:30%;
     z-index: 2;
-    left:650px;
-    top:200px;
+    left:55%;
+    
 
   }
 
@@ -551,8 +480,8 @@ li a:hover {
     padding: 10px;
     display: none;
     z-index: 4;
-    left:20px;
-    top:20px;
+    left:0%;
+    top:0%;
     max-width: 50%;
     max-height: 50%;
 }
@@ -565,8 +494,8 @@ li a:hover {
   padding: 10px;
   display: none;
   z-index: 4;
-  left:525px;
-  top:20px;
+  left:30%;
+  top:0%;
   max-width: 50%;
   max-height: 50%;
 }
@@ -578,8 +507,8 @@ li a:hover {
   padding: 10px;
   display: none;
   z-index: 4;
-  right:20px;
-  top:20px;
+  right:0%;
+  top:0%;
   max-width: 50%;
   max-height: 50%;
 }
@@ -588,3 +517,25 @@ p{
 
   font-size: 16px;
 }
+
+.Buoy3{
+  position: absolute;
+  left: 30%; 
+  bottom: 0%; 
+  transform: translateX(-50%);
+  z-index: 3;
+  height: 50%; 
+  width: auto; 
+}
+
+.Buoy4{
+
+  position: absolute;
+  left: 60%;
+  bottom: 0%; 
+  z-index: 3;
+  height: 40%; 
+  width: auto;
+}
+
+
