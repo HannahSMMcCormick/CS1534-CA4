@@ -232,11 +232,14 @@ ul {
   height: 100%;
   display: flex;
   justify-content: flex-start;
+  z-index: 10;
+  position: relative;
+  
 }
 
 li {
   place-items: 20px;
-  z-index: 3;
+  z-index: 2;
 }
 
 li a {
@@ -427,6 +430,7 @@ li a:hover {
     flex-direction: column; 
     height: 450px;
     overflow: scroll;
+
   }
 
   .Island {
@@ -521,11 +525,11 @@ p{
 .Buoy3{
   position: absolute;
   left: 30%; 
-  bottom: 0%; 
+  bottom: 5%; 
   transform: translateX(-50%);
   z-index: 3;
-  height: 50%; 
-  width: auto; 
+  height: 30%; 
+  width: 20%; 
 }
 
 .Buoy4{
