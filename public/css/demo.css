@@ -34,30 +34,56 @@ h1{
 }
 
 
-  .Buoy {
-    position: absolute;
-    bottom: 5%;
-    left: 40%; 
-    transform: translateX(-50%);
-    z-index: 3;
-    height:80%;
-  }
+.BuoyContainer {
+  position: absolute;
+  top: 30%; 
+  left: 30%; 
+  width: 20%; 
+  height: 40%; 
+  border: 1px solid black;
+  z-index: 3;
+}
 
+.BuoyContainer2 {
+  position: absolute;
+  top: 0%; 
+  left: 57%; 
+  width: 10%; 
+  height: 40%; 
+  border: 1px solid black;
+}
+
+.BuoyContainer3 {
+  position: absolute;
+  bottom: 0%; 
+  left: 10%; 
+  width: 10%; 
+  height: 40%; 
+  border: 1px solid black;
+}
+
+.BuoyContainer4 {
+  position: absolute;
+  bottom: 0%; 
+  left: 80%; 
+  width: 10%; 
+  height: 40%; 
+  border: 1px solid black;
+}
+
+.Buoy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .wave{
   position: absolute;
   bottom: 0;
   height: 40%;
   width: 100%; 
   z-index: 4;
-}
-
-.Buoy2 {
-  position: absolute;
-  left:60%;
-  bottom: 30%; 
-  height:80%;
-  transform: translateX(-50%);
-  z-index: 1;
 }
 
 .wave2{
@@ -542,4 +568,7 @@ p{
   width: auto;
 }
 
+.link{
 
+  display: inline-block;
+}

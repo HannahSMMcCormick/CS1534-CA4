@@ -1,5 +1,5 @@
 //required for front end communication between client and server
-const socket = io('http://localhost:5000/');
+const socket = io();
 
 const inboxPeople = document.querySelector(".inbox__people");
 
