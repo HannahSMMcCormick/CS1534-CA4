@@ -44,6 +44,7 @@ const addToUsersBox = function (userName) {
   inboxPeople.innerHTML += userBox;
 };
 
+
 //call 
 newUserConnected();
 

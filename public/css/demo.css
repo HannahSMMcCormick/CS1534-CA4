@@ -29,7 +29,6 @@ h1{
   bottom: 0;
   width: 100%;
   height: 80vh; 
-  border-style: solid;
   overflow: hidden;
 }
 
@@ -40,7 +39,6 @@ h1{
   left: 30%; 
   width: 20%; 
   height: 40%; 
-  border: 1px solid black;
   z-index: 3;
 }
 
@@ -50,7 +48,6 @@ h1{
   left: 57%; 
   width: 10%; 
   height: 40%; 
-  border: 1px solid black;
 }
 
 .BuoyContainer3 {
@@ -59,7 +56,6 @@ h1{
   left: 10%; 
   width: 10%; 
   height: 40%; 
-  border: 1px solid black;
 }
 
 .BuoyContainer4 {
@@ -68,7 +64,7 @@ h1{
   left: 80%; 
   width: 10%; 
   height: 40%; 
-  border: 1px solid black;
+
 }
 
 .Buoy {
@@ -99,7 +95,6 @@ max-width:100%;
   position: absolute;
   height:40%;
   width:20%;
-  border-style: solid;
   left: 15%; 
   bottom:30%;
   transform: translateX(-50%);
@@ -117,7 +112,6 @@ max-width:100%;
   top:1%;
   height:80%;
   width:70%;
-  border-style: solid;
   left: 90%; 
   bottom:60%;
   transform: translateX(-50%);
@@ -156,7 +150,6 @@ max-width:100%;
   position: absolute;
   height:40%;
   width:20%;
-  border-style: solid;
   right: 5%; 
   bottom:60%;
   z-index: 3;
@@ -179,7 +172,6 @@ max-width:100%;
   top:1%;
   height:80%;
   width:70%;
-  border-style: solid;
   left: 0%; 
   bottom:60%;
   transform: translateX(-50%);
@@ -222,7 +214,6 @@ max-width:100%;
   left: 0;
   width: 100%; /* Full width */
   height: 60vh; 
-  border: 1px solid black;
   overflow: hidden;
 }
 
@@ -465,7 +456,6 @@ li a:hover {
     transform: translateX(-50%);
     width: 90%;
     height: 90%;
-    border-style: solid;
     overflow: hidden;
   }
 
